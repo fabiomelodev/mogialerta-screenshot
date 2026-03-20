@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grupo Fortico - Protótipo</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .screenshot-desktop {
+            width: 1905px;
+            height: 3313px;
+            display: none;
+        }
+
+        .screenshot-mobile {
+            width: 750px;
+            height: 10442px;
+            display: block;
+        }
+
+        @media screen and (min-width: 1200px) {
+            .screenshot-desktop {
+                display: block;
+            }
+
+            .screenshot-mobile {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <img class="screenshot-desktop" src="./screenshot-desktop.png" />
+    <img class="screenshot-mobile" src="./screenshot-mobile.png" />
+</body>
+
+</html>
